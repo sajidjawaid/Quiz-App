@@ -1,0 +1,120 @@
+@-webkit-keyframes tilt-in-top-1 {
+    0% {
+        -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+        transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+        transform: rotateY(0deg) translateY(0) skewY(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes tilt-in-top-1 {
+    0% {
+        -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+        transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+        transform: rotateY(0deg) translateY(0) skewY(0deg);
+        opacity: 1;
+    }
+}
+
+
+button {
+    animation: vibrate-1 0.9s linear infinite both;
+}
+
+@keyframes vibrate-1 {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+
+.greet {
+    -webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #17181d;
+    color: #fcd9b8c2;
+    font-family: "Chakra Petch", sans-serif;
+    ;
+}
+
+.dnt{
+    margin: 20px;
+}
+
+.greet{
+    text-align: center;
+    margin-top: 50px;
+}
+.container1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    background: none;
+    border: 0px;
+    margin-top: 5%;
+    /* cursor: pointer; */
+  }
+
+
+button:hover {
+    box-shadow: 0 0 10px #fcd9b8c2;
+    color: #fcd9b8c2;
+}
+
+button:active {
+    font-size: 23px;
+    border: 3px solid green;
+    color: white;
+    transition: 0.05s;
+    box-shadow: 0 0 10px black;
+}

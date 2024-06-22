@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <div class="dnt">
+        <span>Time Remaining: <span id="timer">1:00</span></span>
+    </div>
+    <div class="main">
+        <div class="count" id="count" align="left"><span id="count1"></span> Out Of <span id="count2"></span></div>
+        <div class="question" id="ques">kdjwbvejbvibe</div>
+
+        <div class="ans">
+            <div align="center"><img id="image" src="./Media/winner.gif"></div>
+            <div id="bioData"></div>
+            <div onclick="getAll(this)" class="Q1" id="a">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+            <div onclick="getAll(this)" class="Q1" id="b">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+            <div onclick="getAll(this)" class="Q1" id="c">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+            <div onclick="getAll(this)" class="Q1" id="d">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+        <br>
+        <br>
+        <div>
+            <a href="#" id="goto">
+                <button id="btn" onclick="next()">Next</button>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+<script src="app3.js"></script>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome To Quiz Application</title>
+</head>
+
+<body>
+    <div class="dnt">
+        <span>Date: </span><span class="date" id="date"></span><br>
+        <span>Day: </span><span class="day" id="day"></span>
+    </div>
+    <div class="mainContainer">
+        <div class="container1 roll-in-blurred-left">
+            <div class="welcome">Welcome To<br>Quiz Application</div>
+            <p>Please Fill Login Form To Continue Your Quiz</p>
+        </div>
+        <div class="container2">
+            <div>
+                <div>
+                    <p id="error1">First Name Not Found *</p>
+                    <input type="text" name="" id="firstName" placeholder="Enter Your First Name"></br>
+                </div>
+                <div>
+                    <p id="error2">Last Name Not Found *</p>
+                    <input type="text" name="" id="lastName" placeholder="Enter Your Last Name"></br>
+                </div>
+                <div>
+                    <p id="error3">Email Not Found *</p>
+                    <input type="email" name="" id="email" placeholder="Enter Your Email Address"></br>
+                </div>
+                <div>
+                    <p id="error4">Phone Number Not Found *</p>
+                    <input type="number" name="" id="num" placeholder="Enter Your Phone Number"></br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div align="center">
+        <a href="#" id="link">
+            <button align="center" onclick="save()">SUBMIT</button>
+        </a>
+    </div>
+</body>
+<script src="app.js"></script>
+<script> </script>
+
+</html>
